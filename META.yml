@@ -1,0 +1,30 @@
+---
+name: Github-Fork-Parent
+version: 0.01
+author:
+  - 'Alexandr Ciornii <alexchorny@gmail.com>'
+abstract: Perl module to determine which repository stands in a root of GitHub forking hierarhy.
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+  repository: http://github.com/chorny/Github-Fork-Parent
+requires:
+  Exporter: 5.57
+  LWP::UserAgent: 0
+  YAML::Tiny: 1.4
+  perl: 5.006
+build_requires:
+  LWP::Online: 1.06
+  Test::More: 0
+provides:
+  Github::Fork::Parent:
+    file: lib/Github/Fork/Parent.pm
+    version: 0.01
+generated_by: Module::Build version 0.33
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+keywords:
+  - github
+  - repository
+  - fork
